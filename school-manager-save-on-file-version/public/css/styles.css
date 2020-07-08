@@ -219,4 +219,97 @@ form#form-delete {
   right: 0;
 }
 
+/*======INDEX INSTRUCTORS===========*/
+.table-container {
+  display: block;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.table-container table {
+  width: 100%;  
+  border-spacing: 0;
+}
+
+.table-container thead tr th {
+  text-align: center;
+}
+
+td, th {
+  padding: 16px;
+  border-bottom: 2px solid #d9d9d9;
+  text-align: center;
+}
+
+th {
+  text-transform: uppercase;
+  color: var(--gray-color);
+  font-size: 14px;
+}
+
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+
+tbody tr td:first-child {
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  align-items: center;
+}
+
+tbody tr td:first-child span {
+  width: 40px;
+  height: 40px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  margin: 0 auto;
+
+  box-shadow: 3px 1px 6px -4px black;
+  border: 2px solid white;
+}
+
+td.viewOptional {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+td.viewOptional span {
+  padding: 8px 12px;
+  background-color: aqua;
+  border-radius: 16px;
+  color: var(--primary-color);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+
+tbody tr td:last-child a,
+.table-container > a {
+  background-color: var(--primary-color);
+  color: #FFF;
+  padding: 8px 16px;
+  text-transform: uppercase;
+  font-size: 12px;
+  border-radius: 4px;
+}
+
+.table-container > a {
+  margin-bottom: 16px;
+  display: inline-block;
+}
+
+.table-container thead tr th:last-child,
+td:last-child {
+  text-align: center;
+}
+
+td:last-child:hover,
+.table-container > a:hover {
+  opacity: 0.5;
+}
+
+
 

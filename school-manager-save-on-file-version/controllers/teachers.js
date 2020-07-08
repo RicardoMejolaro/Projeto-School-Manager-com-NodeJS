@@ -4,7 +4,7 @@ const { age, date, graduation, class_type } = require('../utils/utils');
 
 //Index
 exports.index = (req, res) => {
-  res.render('teachers/index');
+  return res.render('teachers/index', { teachers: data.teachers });
 }
 //Create
 exports.create = (req, res) => {
