@@ -1,5 +1,6 @@
 const fs = require('fs');
 const data = require('../file-system/data.json');
+const { age, date, graduation } = require('../utils/utils');
 
 //Index
 exports.index = (req, res) => {
@@ -45,6 +46,44 @@ exports.post = (req, res) => {
   fs.writeFile('file-system/data.json', JSON.stringify(data, null, 2), (err) => {
     if (err) return res.send('Erro ao salvar o arquivo!')
 
-    return res.redirect(`/teachers`);
+    return res.redirect(`/teachers/${id}`);
   });
+}
+//Show
+exports.show = (req, res) => {
+  const { id } = req.params;
+
+  const foundTeacher = data.teachers.find((teacher) => {
+    return teacher.id == id;
+  });
+
+  if (!foundTeacher) return res.send('Professor não encontrado!');
+  
+  const teacher = {
+    ...foundTeacher,
+    age: age(foundTeacher.birth),
+    schooling: graduation(foundTeacher.schooling),
+    services: foundTeacher.services.split(','),
+    created_at: new Intl.DateTimeFormat("en-GB").format(foundTeacher.created_at)
+  }
+
+  return res.render('teachers/show', { teacher });
+  
+}
+//Edit
+exports.edit = (req, res) => {
+  const { id } = req.params
+
+  const foundTeacher = data.teachers.find((teacher) => {
+    return teacher.id == id;
+  });
+
+  if (!foundTeacher) return res.send('Instrutor não encontrado!');
+
+  const teacher = {
+    ...foundTeacher,
+    birth: date(foundTeacher.birth).iso
+  }
+
+  return res.render('teachers/edit', { teacher });
 }

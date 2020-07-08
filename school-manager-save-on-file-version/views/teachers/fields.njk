@@ -35,10 +35,26 @@
   <div>
     <select name="schooling">
       <option value="">Selecione</option>
-      <option value="Ensino Médio Completo">Ensino Médio Completo</option>
-      <option value="Ensino Superior Completo">Ensino Superior Completo</option>
-      <option value="Mestrado">Mestrado</option>
-      <option value="Doutorado">Doutorado</option>
+      <option
+        value="medium" 
+        {% if teacher.schooling == "medium" %}selected{% endif %}
+        >Ensino Médio Completo
+      </option>
+      <option
+        value="graduate"
+        {% if teacher.schooling == "graduate" %}selected{% endif %}
+        >Ensino Superior Completo
+      </option>
+      <option
+        value="masters"
+        {% if teacher.schooling == "masters" %}selected{% endif %}
+        >Mestrado
+      </option>
+      <option
+        value="doctorate"
+        {% if teacher.schooling == "doctorate" %}selected{% endif %}
+        >Doutorado
+      </option>
     </select> 
   </div>
 </div>
@@ -51,7 +67,7 @@
         type="radio" 
         name="class_type" 
         value="Presential" 
-        {% if teacher.gender == 'Presential' %}
+        {% if teacher.class_type == 'Presential' %}
           checked
         {% endif %}>Presencial</span>
     <span>
@@ -59,7 +75,7 @@
         type="radio" 
         name="class_type" 
         value="Distance"
-        {% if teacher.gender == 'Distance' %}
+        {% if teacher.class_type == 'Distance' %}
           checked
         {% endif %}
         >A Distância</span>
