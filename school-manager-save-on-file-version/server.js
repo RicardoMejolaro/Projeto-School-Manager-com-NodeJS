@@ -1,6 +1,6 @@
 const express = require('express');
 const nunjucks = require('nunjucks');
-const routes = express.Router();
+const routes = require('./routes/routes');
 
 const server = express();
 
@@ -15,10 +15,6 @@ nunjucks.configure('views', {
   autoescape: false,
   noCache: true
 });
-
-routes.get('/', (req, res) => {
-  res.render('teachers/index');
-})
 
 server.listen(5000, () => {
   console.log("Server is Running!");
