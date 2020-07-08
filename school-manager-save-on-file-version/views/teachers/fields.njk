@@ -66,16 +66,16 @@
       <input 
         type="radio" 
         name="class_type" 
-        value="Presential" 
-        {% if teacher.class_type == 'Presential' %}
+        value="presential" 
+        {% if teacher.class_type == 'presential' %}
           checked
         {% endif %}>Presencial</span>
     <span>
       <input 
         type="radio" 
         name="class_type" 
-        value="Distance"
-        {% if teacher.class_type == 'Distance' %}
+        value="distance"
+        {% if teacher.class_type == 'distance' %}
           checked
         {% endif %}
         >A Distância</span>
@@ -93,4 +93,3 @@
   </div>
 </div>
 
-<button type="submit">Salvar</button>

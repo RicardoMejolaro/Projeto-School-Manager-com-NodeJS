@@ -44,6 +44,18 @@ module.exports = {
 
     return graduation;
     
+  },
+  class_type: function(type) {
+    let class_type = "";
+
+    if (type == "presential") {
+      class_type = "Presencial";
+    } else {
+      class_type = "Distância";
+    }
+
+    return class_type;
+    
   }
 }
 

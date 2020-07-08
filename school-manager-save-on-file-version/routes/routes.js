@@ -10,6 +10,7 @@ routes.get('/teachers/create', teachers.create);
 routes.get('/teachers/:id', teachers.show);
 routes.get('/teachers/:id/edit', teachers.edit);
 routes.post('/teachers', teachers.post);
-
+routes.put('/teachers', teachers.put);
+routes.delete('/teachers', teachers.delete);
 
 module.exports = routes;
