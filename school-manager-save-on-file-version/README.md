@@ -60,7 +60,7 @@ dão aulas partuculares e alunos matrículados nessas aulas, o desafio foi propo
 para consolidar o aprendizado durante o módulo 4 do curso, onde deve-se utilizar HTML, CSS, JavaScript, NodeJS, Express, Fs, Template Engine Nunjucks contendo menus, página index com visualização geral, páginas de criação, visualização, edição, exclusão de Professores e Alunos.
 
 <h1>
-<img src="public/assets/gym-manager.gif" alt="Gif demonstrativo Foodfy">
+<img src="public/assets/school-manager.gif" alt="Gif demonstrativo School Manager">
 </h1>
 
 
