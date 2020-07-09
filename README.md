@@ -1,6 +1,6 @@
-<h1 align="center"> 
+<h2 align="center"> 
 🚀 Site Gym Manager com backend e dados salvos em arquivo 🚀 <br/> 🚀 Done! ✔️
-</h1>
+</h2>
 
 <h3 align=center>
 <strong>Readme Versão School Manager dados salvos em arquivo<strong>
