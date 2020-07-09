@@ -54,8 +54,28 @@ module.exports = {
       class_type = "Distância";
     }
 
-    return class_type;
-    
+    return class_type; 
+  },
+  grade: function (school_year) {
+    let grade = "";
+
+    if (school_year == "5EF") {
+      grade = "5º Ano do Ensino Fundamental";
+    } else if ((school_year == "6EF")) {
+      grade = "6º Ano do Ensino Fundamental";
+    } else if ((school_year == "7EF")) {
+      grade = "7º Ano do Ensino Fundamental";
+    } else if ((school_year == "8EF")) {
+      grade = "8 Ano do Ensino Fundamental";
+    } else if ((school_year == "1EM")) {
+      grade = "1º Ano do Ensino Médio";
+    } else if ((school_year == "2EM")) {
+      grade = "2º Ano do Ensino Médio";
+    } else {
+      grade = "3º Ano do Ensino Médio";
+    }
+
+    return grade;
   }
 }
 

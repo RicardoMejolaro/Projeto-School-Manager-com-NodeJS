@@ -1,13 +1,11 @@
-<h1 align=center>
-<img src="gym-manager-save-on-file-version/public/assets/logo-launchbase.svg" alt="Bootcamp LaunchBase" width="350px">
-<h2 align=center><strong>Readme Versão Gym Manager dados salvos em arquivo<strong></h2>
+<h1 align="center"> 
+🚀 Site Gym Manager com backend e dados salvos em arquivo 🚀 <br/> 🚀 Done! ✔️
 </h1>
 
-<h4 align="center"> 
-🚀 Site Gym Manager com backend e dados salvos em arquivo 🚀 <br/> 🚀 Done! ✔️
-</h4>
+<h3 align=center>
+<strong>Readme Versão School Manager dados salvos em arquivo<strong>
+</h3>
 
----
 
 ## 📑️ Índice
 
@@ -25,46 +23,50 @@
 
 O LaunchBase é um treinamento no formato de bootcamp online que tem duração de 8 semanas. A cada semana os conteúdos são liberados de acordo com um cronograma, guiando o aluno pelas ferramentas e conceitos mais modernos de desenvolvimento web para entrar com o pé direito nesse universo e ir direto ao ponto naquilo que realmente importa para alcançar seus maiores objetivos como dev..
 
-### Módulo 4
-
-<h2>Página inicial</h2>
+<h2>Links dos desafios propostos:</h2>
 <ul>
-  <li>Menu para duas páginas</li>
-  <li>Dados dos instrutores cadastrados</li>
-  <li>Botão VER detalhes do instrutor selecionado</li>
-  <li>Botão NOVO cadastrar novo instrutor</li>
-</ul>
-
-<h2>Página Membros</h2>
-<ul>
-  <li>Menu para duas páginas</li>
-  <li>Dados dos membros cadastrados</li>
-  <li>Botão VER detalhes do membro selecionado</li>
-  <li>Botão NOVO cadastrar novo membro</li>
-</ul>
-
-<h2>Funcionalidades</h2>
-<ul>
-  <li>Cadastrar</li>
-  <li>Visualizar todos por categoria (Instrutores ou Membros)</li>
-  <li>Visualizar por ID</li>
-  <li>Editar</li>
-  <li>Deletar</li>
+  <li>
+  <a href="https://github.com/Rocketseat/bootcamp-launchbase-desafios-04/blob/master/desafios/04-1-header.md">Acessar desafio 4-1
+  </a>
+  </li>
+  <li>
+  <a href="https://github.com/Rocketseat/bootcamp-launchbase-desafios-04/blob/master/desafios/04-2-card-teacher.md">Acessar desafio 4-2
+  </a>
+  </li>
+  <li>
+  <a href="https://github.com/Rocketseat/bootcamp-launchbase-desafios-04/blob/master/desafios/04-3-form-and-routes-teacher.md">Acessar desafio 4-3
+  </a>
+  </li>
+  <li>
+  <a href="https://github.com/Rocketseat/bootcamp-launchbase-desafios-04/blob/master/desafios/04-4-show-edit-format-teacher.md">Acessar desafio 4-4
+  </a>
+  </li>
+  <li>
+  <a href="https://github.com/Rocketseat/bootcamp-launchbase-desafios-04/blob/master/desafios/04-5-put-delete-teacher.md">Acessar desafio 4-5
+  </a>
+  </li>
+  <li>
+  <a href="https://github.com/Rocketseat/bootcamp-launchbase-desafios-04/blob/master/desafios/04-6-list-teachers.md">Acessar desafio 4-6
+  </a>
+  </li>
+  <li>
+  <a href="https://github.com/Rocketseat/bootcamp-launchbase-desafios-04/blob/master/desafios/04-7-students.md">Acessar desafio 4-7
+  </a>
+  </li>
 </ul>
 
 ---
-
-<h1>
-<img src="gym-manager-save-on-file-version/public/assets/gym-manager.gif" alt="Gif demonstrativo Foodfy">
-</h1>
 
 ### 📝️ Sobre
 
-O projeto trata-se de um site gerenciador de academia criado para consolidar o aprendizado
-durante o módulo 4 do curso, onde deve-se utilizar HTML, CSS, JavaScript,
-NodeJS, Express, Fs, Template Engine Nunjucks contendo menus, página index com visualização geral, páginas de criação, visualização, edição, exclusão de instrutores e membros da academia.
+O projeto trata-se de um site gerenciador de escola, cadastrando professores que
+dão aulas partuculares e alunos matrículados nessas aulas, o desafio foi proposto
+para consolidar o aprendizado durante o módulo 4 do curso, onde deve-se utilizar HTML, CSS, JavaScript, NodeJS, Express, Fs, Template Engine Nunjucks contendo menus, página index com visualização geral, páginas de criação, visualização, edição, exclusão de Professores e Alunos.
 
----
+<h1>
+<img src="school-manager-save-on-file-version/public/assets/gym-manager.gif" alt="Gif demonstrativo Foodfy">
+</h1>
+
 
 ### 🚀️ Tecnologias utilizadas
 
@@ -83,6 +85,8 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 #### 💻️ Acrescentado ao projeto proposto
 
 - Responsividade com media query baseado no toogle device toolbar do chrome.
+- Estilização própria
+- Formato de exibição dos dados
 
 ---
 
@@ -106,10 +110,10 @@ $ npm -v
 $ git clone https://github.com/RicardoMejolaro/Projeto-Gym-Manager-com-NodeJS.git
 
 #Entrar no diretório
-$ cd gym-manager-save-on-file-version
+$ cd school-manager-save-on-file-version
 
 #Abrir projeto no VsCode ou com seu prompt de comando de preferência
-code . ||  cd gym-manager-save-on-file-version (Passo acima) 
+code . ||  cd school-manager-save-on-file-version (Passo acima) 
 
 #Com o terminal aberto rodar o comando
 $ npm install para instalar as dependências necessárias
@@ -128,7 +132,7 @@ localhost:5000
 ***Ricardo Mejolaro*** 
 <br/> 
 <a href="https://www.linkedin.com/in/ricardo-mejolaro/">
-<img src="gym-manager-save-on-file-version/public/assets/linkedin.png">
+<img src="school-manager-save-on-file-version/public/assets/linkedin.png">
 </a>
 
 ##### Licença

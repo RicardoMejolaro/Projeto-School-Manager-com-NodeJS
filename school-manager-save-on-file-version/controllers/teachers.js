@@ -81,7 +81,7 @@ exports.edit = (req, res) => {
     return teacher.id == id;
   });
 
-  if (!foundTeacher) return res.send('Instrutor não encontrado!');
+  if (!foundTeacher) return res.send('Professor não encontrado!');
 
   const teacher = {
     ...foundTeacher,
@@ -103,7 +103,7 @@ exports.put = (req, res) => {
     }
   });
 
-  if (!foundTeacher) return res.send('Instrutor não encontrado!');
+  if (!foundTeacher) return res.send('Professor não encontrado!');
 
   const teacher = {
     ...foundTeacher,
