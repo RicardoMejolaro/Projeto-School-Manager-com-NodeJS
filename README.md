@@ -1,7 +1,13 @@
+<<<<<<< HEAD
 <h1 align="center"> 
 <img src="https://img.icons8.com/fluent/48/000000/school.png" alt="Logo school manager" width="200px">
 
 ---
+=======
+<h2 align="center"> 
+🚀 Site Gym Manager com backend e dados salvos em arquivo 🚀 <br/> 🚀 Done! ✔️
+</h2>
+>>>>>>> c3840d7ce7e8ab543ca4c116a64d7a115416a426
 
 🚀 Site School Manager com backend e dados salvos em arquivo 🚀 <br/><br/> 🚀 Done! ✔️
 </h1>
