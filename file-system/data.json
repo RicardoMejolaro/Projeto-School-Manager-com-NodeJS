@@ -1,16 +1,6 @@
 {
   "teachers": [
     {
-      "id": 2,
-      "avatar_url": "https://images.unsplash.com/photo-1544535830-9df3f56fff6a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
-      "name": "RICARDO HUMBERTO DO NASCIMENTO MEJOLARO",
-      "birth": 583113600000,
-      "schooling": "masters",
-      "class_type": "presential",
-      "services": "Informática, Programação",
-      "created_at": 1594237882695
-    },
-    {
       "id": 3,
       "avatar_url": "https://images.unsplash.com/photo-1548690312-e3b507d8c110?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
       "name": "Nayara Cristina Dorta",
@@ -25,11 +15,11 @@
     {
       "id": 1,
       "avatar_url": "https://images.unsplash.com/photo-1513258496099-48168024aec0?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
-      "name": "RICARDO HUMBERTO DO NASCIMENTO MEJOLARO",
+      "name": "RICARDO HUMBERTO DO NASCIMENTO",
       "email": "ricardo.mejolaro@gmail.com",
       "birth": 583113600000,
-      "school_year": "3EM",
-      "workload": "40",
+      "school_year": "8EF",
+      "workload": "10",
       "created_at": 1594253500779
     },
     {
@@ -38,8 +28,8 @@
       "name": "Nayara Cristina Dorta Silva",
       "email": "nay@hotmail.com",
       "birth": 745113600000,
-      "school_year": "5EF",
-      "workload": "5",
+      "school_year": "2EM",
+      "workload": "20",
       "created_at": 1594256990356
     },
     {
@@ -51,6 +41,16 @@
       "school_year": "1EM",
       "workload": "50",
       "created_at": 1594324399994
+    },
+    {
+      "id": 4,
+      "avatar_url": "https://images.unsplash.com/photo-1548690312-e3b507d8c110?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+      "name": "PiperSide",
+      "email": "piperside@piperside.com.br",
+      "birth": 1172620800000,
+      "school_year": "8EF",
+      "workload": "10",
+      "created_at": 1594487969007
     }
   ]
 }

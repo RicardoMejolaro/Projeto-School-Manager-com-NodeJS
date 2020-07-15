@@ -66,7 +66,7 @@ module.exports = {
     } else if ((school_year == "7EF")) {
       grade = "7º Ano do Ensino Fundamental";
     } else if ((school_year == "8EF")) {
-      grade = "8 Ano do Ensino Fundamental";
+      grade = "8º Ano do Ensino Fundamental";
     } else if ((school_year == "1EM")) {
       grade = "1º Ano do Ensino Médio";
     } else if ((school_year == "2EM")) {

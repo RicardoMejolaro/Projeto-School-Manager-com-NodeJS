@@ -1,30 +1,39 @@
 <h1 align="center"> 
-🚀 Site Gym Manager com backend e dados salvos em arquivo 🚀 <br/> 🚀 Done! ✔️
-</h1>
+<img src="public/assets/logo.png" alt="Logo school manager" width="200px">
 
-<h3 align=center>
-<strong>Readme Versão School Manager dados salvos em arquivo<strong>
-</h3>
+---
+
+🚀 Site School Manager com backend e dados salvos em arquivo 🚀 <br/> 🚀 Done! ✔️
+</h1>
 
 
 ## 📑️ Índice
 
-- [Bootcamp LaunchBase](#ℹ️-O-que-é-o-LaunchBase)
 - [O projeto](#📝️-Sobre)
+- [Links desafios](#📝️-Links)
 - [Tecnologias utilizadas](#🚀️-Tecnologias-utilizadas)
-- [Acrescentado ao projeto original](#💻️-Acrescentado-ao-projeto-proposto)
+- [Acrescentado ao projeto original](#💻️-Acrescentado-ao-projeto-original)
 - [Como usar](#💾️-Como-baixar/testar-o-projeto)
+- [Bootcamp LaunchBase](#ℹ️-O-que-é-o-LaunchBase)
 - [Contato](#-Desenvolvido-com-💙️-por)
 - [Licença](#-Licença)
 
 ---
 
-## ℹ️ O que é o LaunchBase?
+## 📝️ Sobre
 
-O LaunchBase é um treinamento no formato de bootcamp online que tem duração de 8 semanas. A cada semana os conteúdos são liberados de acordo com um cronograma, guiando o aluno pelas ferramentas e conceitos mais modernos de desenvolvimento web para entrar com o pé direito nesse universo e ir direto ao ponto naquilo que realmente importa para alcançar seus maiores objetivos como dev..
+O projeto trata-se de um site gerenciador de escola, cadastrando professores que
+dão aulas partuculares e alunos matrículados nessas aulas, o desafio foi proposto
+para consolidar o aprendizado durante o módulo 4 do curso, onde deve-se utilizar HTML, CSS, JavaScript, NodeJS, Express, Fs, Template Engine Nunjucks contendo menus, página index com visualização geral, páginas de criação, visualização, edição, exclusão de Professores e Alunos.
+
+<h1>
+<img src="public/assets/school-manager.gif" alt="Gif School Manager">
+</h1>
+
+## 📝️ Links
 
 <h2>Links dos desafios propostos:</h2>
-<ul>
+<ol>
   <li>
   <a href="https://github.com/Rocketseat/bootcamp-launchbase-desafios-04/blob/master/desafios/04-1-header.md">Acessar desafio 4-1
   </a>
@@ -53,20 +62,9 @@ O LaunchBase é um treinamento no formato de bootcamp online que tem duração d
   <a href="https://github.com/Rocketseat/bootcamp-launchbase-desafios-04/blob/master/desafios/04-7-students.md">Acessar desafio 4-7
   </a>
   </li>
-</ul>
+</ol>
 
 ---
-
-### 📝️ Sobre
-
-O projeto trata-se de um site gerenciador de escola, cadastrando professores que
-dão aulas partuculares e alunos matrículados nessas aulas, o desafio foi proposto
-para consolidar o aprendizado durante o módulo 4 do curso, onde deve-se utilizar HTML, CSS, JavaScript, NodeJS, Express, Fs, Template Engine Nunjucks contendo menus, página index com visualização geral, páginas de criação, visualização, edição, exclusão de Professores e Alunos.
-
-<h1>
-<img src="school-manager-save-on-file-version/public/assets/school-manager.gif" alt="Gif demonstrativo School Manager">
-</h1>
-
 
 ### 🚀️ Tecnologias utilizadas
 
@@ -107,34 +105,40 @@ $ npm -v
 
 ```bash
 # Clonar o repositório
-$ git clone https://github.com/RicardoMejolaro/Projeto-Gym-Manager-com-NodeJS.git
+$ git clone https://github.com/RicardoMejolaro/Projeto-School-Manager-com-NodeJS.git
 
 #Entrar no diretório
-$ cd school-manager-save-on-file-version
+$ cd school-manager
 
 #Abrir projeto no VsCode ou com seu prompt de comando de preferência
-code . ||  cd school-manager-save-on-file-version (Passo acima) 
+code . ||  cd school-manager (Passo acima) 
 
 #Com o terminal aberto rodar o comando
-$ npm install para instalar as dependências necessárias
+$ npm install (para instalar as dependências necessárias)
 
 #Agora só rodar o projeto com o comando
 $ npm start
 
-#E abrir em seu navegador de preferência o caminho
-localhost:5000
+#Pronto projeto abrirá em seu navegador padrão
+Agora é só testar em seu navegador!
 
 ```
 ---
 
-#### Desenvolvido com 💙️ por
+## ℹ️ O que é o LaunchBase?
+
+O LaunchBase é um treinamento no formato de bootcamp online que tem duração de 8 semanas. A cada semana os conteúdos são liberados de acordo com um cronograma, guiando o aluno pelas ferramentas e conceitos mais modernos de desenvolvimento web para entrar com o pé direito nesse universo e ir direto ao ponto naquilo que realmente importa para alcançar seus maiores objetivos como dev..
+
+---
+
+### Desenvolvido com 💙️ por
 
 ***Ricardo Mejolaro*** 
 <br/> 
 <a href="https://www.linkedin.com/in/ricardo-mejolaro/">
-<img src="school-manager-save-on-file-version/public/assets/linkedin.png">
+<img src="public/assets/linkedin.png">
 </a>
 
-##### Licença
+### Licença
 
-Este projeto está licenciado sob a licença MIT - consulte a página [LICENSE] (https://opensource.org/licenses/MIT) para obter detalhes.
+Este projeto está licenciado sob a licença MIT - consulte a página [LICENSE](https://opensource.org/licenses/MIT) para obter detalhes.

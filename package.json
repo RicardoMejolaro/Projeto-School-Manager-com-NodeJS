@@ -1,5 +1,5 @@
 {
-  "name": "school-manager-save-on-file-version",
+  "name": "school-manager",
   "version": "1.0.0",
   "description": "Seu gerenciador de escolas",
   "main": "server.js",
