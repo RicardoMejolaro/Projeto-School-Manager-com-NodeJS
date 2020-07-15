@@ -3,11 +3,6 @@
 
 ---
 
-<h2 align="center"> 
-🚀 Site Gym Manager com backend e dados salvos em arquivo 🚀 <br/> 🚀 Done! ✔️
-</h2>
-
-
 🚀 Site School Manager com backend e dados salvos em arquivo 🚀 <br/><br/> 🚀 Done! ✔️
 </h1>
 
