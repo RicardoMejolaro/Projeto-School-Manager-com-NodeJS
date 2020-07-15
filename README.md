@@ -1,9 +1,9 @@
 <h1 align="center"> 
-<img src="public/assets/logo.png" alt="Logo school manager" width="200px">
+<img src="https://img.icons8.com/fluent/48/000000/school.png" alt="Logo school manager" width="200px">
 
 ---
 
-🚀 Site School Manager com backend e dados salvos em arquivo 🚀 <br/> 🚀 Done! ✔️
+🚀 Site School Manager com backend e dados salvos em arquivo 🚀 <br/><br/> 🚀 Done! ✔️
 </h1>
 
 
