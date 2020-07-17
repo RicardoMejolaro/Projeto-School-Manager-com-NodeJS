@@ -1,5 +1,5 @@
 module.exports = {
-  age: function(timestamp) {
+  age(timestamp) {
     const today = new Date();
     const birthDate = new Date(timestamp);
   
@@ -12,7 +12,7 @@ module.exports = {
   
   return age;
   },
-  date: function(timestamp) {
+  date(timestamp) {
     const date = new Date(timestamp)
 
     const year = date.getUTCFullYear();
@@ -29,7 +29,7 @@ module.exports = {
       birthDay: `${day}/${month}`
     };
   },
-  graduation: function (schooling) {
+  graduation(schooling) {
     let graduation = "";
 
     if (schooling == "medio") {
@@ -45,7 +45,7 @@ module.exports = {
     return graduation;
     
   },
-  class_type: function(type) {
+  class_type(type) {
     let class_type = "";
 
     if (type == "presential") {
@@ -56,7 +56,7 @@ module.exports = {
 
     return class_type; 
   },
-  grade: function (school_year) {
+  grade(school_year) {
     let grade = "";
 
     if (school_year == "5EF") {
