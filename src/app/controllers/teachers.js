@@ -1,6 +1,4 @@
-const fs = require('fs');
-const data = require('../file-system/data.json');
-const { age, date, graduation, class_type } = require('../utils/utils');
+const { date, grade } = require('../../lib/utils');
 
 //Index
 exports.index = (req, res) => {
