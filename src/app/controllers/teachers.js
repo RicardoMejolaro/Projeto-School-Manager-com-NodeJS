@@ -1,5 +1,4 @@
-const { age, date } = require('../../lib/utils');
-const { graduation, grade, class_type } = require('../../lib/utils');
+const { age, date, graduation, class_type } = require('../../lib/utils');
 const Teacher = require('../models/Teacher');
 
 module.exports = {
@@ -33,7 +32,7 @@ module.exports = {
     ];
 
     Teacher.create(data, (teacher) => {
-      return res.redirect(`/teachers`);
+      return res.redirect(`/teachers/${teacher.id}`);
     });
 
   },
