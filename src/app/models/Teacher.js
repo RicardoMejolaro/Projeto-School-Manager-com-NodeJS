@@ -30,5 +30,12 @@ module.exports = {
       callback(results.rows[0]);
 
     });
+  },
+  find(id, callback) {
+    db.query(`SELECT * FROM teachers where id = $1`, [id], (err, results) => {
+      if (err) throw `Erro no banco de dados! ${err}`;
+
+      callback(results.rows[0]);
+    });
   }
 }

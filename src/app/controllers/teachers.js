@@ -38,7 +38,17 @@ module.exports = {
 
   },
   show(req, res) {
-    return
+    Teacher.find(req.params.id, (teacher) => {
+      if(!teacher) return res.send('Professor não localizado!');
+
+      teacher.age = age(teacher.birth_date);
+      teacher.education_level = graduation(teacher.education_level);
+      teacher.class_type = class_type(teacher.class_type)
+      teacher.subjects_taught = teacher.subjects_taught.split(',');
+      teacher.created_at = date(teacher.created_at).format;
+
+      return res.render('teachers/show', { teacher })
+    });
   },
   edit(req, res) {
     return
