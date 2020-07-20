@@ -30,7 +30,7 @@ module.exports = {
       class_type,
       subjects_taught,
       date(Date.now()).iso
-    ]
+    ];
 
     Teacher.create(data, (teacher) => {
       return res.redirect(`/teachers`);
@@ -51,7 +51,13 @@ module.exports = {
     });
   },
   edit(req, res) {
-    return
+    Teacher.find(req.params.id, (teacher) => {
+      if(!teacher) return res.send('Professor não localizado!');
+
+      teacher.birth_date = date(teacher.birth_date).iso;
+
+      return res.render('teachers/edit', { teacher })
+    });
   },
   put(req, res) {
     //Validação todos os campos obrigatórios
@@ -61,7 +67,22 @@ module.exports = {
       if (req.body[key] == "")
         return res.send("Por gentileza preencha todos os campos!")
     }
-    return
+
+    const { avatar_url, name, birth_date, education_level, class_type, subjects_taught, id } = req.body;
+
+    const data = [
+      avatar_url,
+      name,
+      date(birth_date).iso,
+      education_level,
+      class_type,
+      subjects_taught,
+      id
+    ];
+
+    Teacher.update(data, () => {
+     return res.redirect(`/teachers/${id}`);
+    });
   },
   delete(req, res) {
     return
