@@ -1,8 +1,12 @@
 const { age, date } = require('../../lib/utils');
+const { graduation, grade, class_type } = require('../../lib/utils');
+const Teacher = require('../models/Teacher');
 
 module.exports = {
   index(req, res) {
-    return res.render('teachers/index', { teachers });
+    Teacher.all((teachers) => {
+      return res.render('teachers/index', { teachers });
+    });
   },
   create(req, res) {
     return res.render('teachers/create');
@@ -16,7 +20,21 @@ module.exports = {
         return res.send("Por gentileza preencha todos os campos!")
     }
 
-    return
+    const { avatar_url, name, birth_date, education_level, class_type, subjects_taught } = req.body;
+
+    const data = [
+      avatar_url,
+      name,
+      date(birth_date).iso,
+      education_level,
+      class_type,
+      subjects_taught,
+      date(Date.now()).iso
+    ]
+
+    Teacher.create(data, (teacher) => {
+      return res.redirect(`/teachers`);
+    });
 
   },
   show(req, res) {

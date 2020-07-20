@@ -23,8 +23,8 @@
             {{ teacher.name }}
           </td>
           <td class="viewOptional">
-            {% for service in teacher.services.split(",") %}
-              <span>{{ service }}</span>
+            {% for subjects_taught in teacher.subjects_taught.split(",") %}
+              <span>{{ subjects_taught }}</span>
             {% endfor %}       
           </td>
 

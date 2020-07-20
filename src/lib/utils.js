@@ -29,14 +29,14 @@ module.exports = {
       birthDay: `${day}/${month}`
     };
   },
-  graduation(schooling) {
+  graduation(education_level) {
     let graduation = "";
 
-    if (schooling == "medio") {
+    if (education_level == "medio") {
       graduation = "Ensino Médio Completo";
-    } else if ((schooling == "graduate")) {
+    } else if ((education_level == "graduate")) {
       graduation = "Ensino Superior Completo";
-    } else if ((schooling == "masters")) {
+    } else if ((education_level == "masters")) {
       graduation = "Mestrado";
     } else {
       graduation = "Doutorado";
