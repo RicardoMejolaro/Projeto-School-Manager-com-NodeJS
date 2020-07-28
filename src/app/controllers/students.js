@@ -3,22 +3,45 @@ const Student = require('../models/Student');
 
 module.exports = {
   index(req, res) {
-    Student.all((studentsNew) => {
-      let students = [];
+    let { filter, page, limit } = req.query;
 
-      for (const student of studentsNew) {
-        let year_school = student.school_year;
+    page = page || 1;
+    limit = limit || 2;
+    let offset = limit * (page - 1);
+
+    const params = {
+      filter,
+      page,
+      limit,
+      offset,
+      callback(studentsNew) {
+        
+        const pagination = {
+          total: studentsNew[0] ? Math.ceil(studentsNew[0].total / limit) : 0,
+          page
+        }
+          let students = [];
     
-        students.push({
-          ...student,
-          school_year: grade(year_school)
-        })
+          for (const student of studentsNew) {
+            let year_school = student.school_year;
+        
+            students.push({
+              ...student,
+              school_year: grade(year_school)
+            })
+          }
+
+        return res.render('students/index', { students, pagination, filter });
       }
-      return res.render('students/index', { students });
-    });
+    }
+
+    Student.paginate(params)
+
   },
   create(req, res) {
-    return res.render('students/create');
+    Student.teacherSelectOptions((options) => {
+      return res.render('students/create', { teacherOptions: options });
+    });
   },
   post(req, res) {
     //Validação todos os campos obrigatórios
@@ -28,7 +51,7 @@ module.exports = {
       if (req.body[key] == "")
         return res.send("Por gentileza preencha todos os campos!")
     }
-    const { avatar_url, name, email, birth, school_year, workload } = req.body;
+    const { avatar_url, name, email, birth, school_year, workload, teacher } = req.body;
 
     const data = [
       avatar_url,
@@ -37,6 +60,7 @@ module.exports = {
       date(birth).iso,
       school_year,
       workload,
+      teacher
     ];
 
     Student.create(data, (student) => {
@@ -61,7 +85,9 @@ module.exports = {
 
       student.birth = date(student.birth).iso;
 
-      return res.render('students/edit', { student })
+      Student.teacherSelectOptions((options) => {
+        return res.render('students/edit', { student, teacherOptions: options });
+      });
     });
   },
   put(req, res) {
@@ -73,7 +99,7 @@ module.exports = {
         return res.send("Por gentileza preencha todos os campos!")
     }
     
-    const { avatar_url, name, email, birth, school_year, workload, id } = req.body;
+    const { avatar_url, name, email, birth, school_year, workload, teacher, id } = req.body;
 
     const data = [
       avatar_url,
@@ -82,6 +108,7 @@ module.exports = {
       date(birth).iso,
       school_year,
       workload,
+      teacher,
       id
     ];
 

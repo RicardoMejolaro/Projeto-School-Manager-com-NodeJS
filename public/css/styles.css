@@ -311,5 +311,57 @@ td:last-child:hover,
   opacity: 0.5;
 }
 
+/*=======FILTERS=========*/
+.table-container .header-table {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin-bottom: 32px;
+}
 
+.table-container .header-table a {
+  margin: 0;
+  width: 120px;
+}
 
+.table-container .header-table form {
+  display: grid;
+  grid-template-columns: 1fr 120px;
+  align-items: center;
+  gap: 8px;
+}
+
+.table-container .header-table form input {
+  border: 1px solid #eee;
+  padding: 6px 8px;
+  box-sizing: border-box;
+}
+
+.table-container .header-table form button {
+  margin: 0;
+}
+
+/*==============PAGINAÇÃO=========*/
+.pagination {
+  width: 100%;
+  height: 20px;
+  margin-top: 32px;
+  text-align: center;
+}
+
+.pagination a,
+.pagination span {
+  color: var(--primary-color);
+  margin-right: 16px;
+  font-weight: bold;
+}
+
+.pagination a {
+  border: 2px solid var(--primary-color);
+  padding: 5px;
+}
+
+.pagination a:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
